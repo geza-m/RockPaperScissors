@@ -1,0 +1,13 @@
+
+
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    background-color:cornflowerblue;
+    color:white;
+    text-align: center;
+}
