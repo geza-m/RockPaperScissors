@@ -5,18 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperScissors</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/8c1ccae466.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
     
-    <form class = "input">
-        <input id="myInput" type="text" placeholder="Rock Paper Scissor"></input>
-    </form>
-    <div id = "results">
-    Results of the 5 rounds.
+    <div class="container">
+        <div class="header">
+            <h1 class = "headerText">Rock<span class="fa-regular fa-hand-back-fist fa-1x fa-bounce"></span> Paper<span class="fa-regular fa-hand fa-1x fa-bounce"></span> Scissors<span class="fa-regular fa-hand-scissors fa-1x fa-bounce"></span></h1>
+    
+        </div>
+        <div class="header2">
+            <h3 class="headerText2"> Let's play 5 rounds of Rock Paper Scissors!</h2>
+        </div>
+        <div class="header2">
+            <h4 class="headerText2">Click to Start!</h4>
+        </div>
+
+        <div class="buttonDiv">
+        <button class="button" id = "startButton">GO!</button>
+        </div>
     </div>
-    <div>one more division</div>
+
+
+
 
 </body>
 </html>
