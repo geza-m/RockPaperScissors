@@ -3,9 +3,10 @@
    
 }
 .container {
-    background-color: rgb(242, 226, 205);
+    background-color: rgb(242, 241, 205);
     margin: 1em;
     padding: 1em;
+    border-radius: 1em;
 }
 .header {
     display: flex;
@@ -14,6 +15,8 @@
     background-color: antiquewhite;
     margin:1em;
     padding: 0;
+    border-radius: 1em;
+    background-color: rgb(179, 220, 197);
 }
 .headerText {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -29,6 +32,8 @@
     background-color: antiquewhite;
     margin:1em;
     padding: 0;
+    border-radius: 1em;
+    background-color: rgb(179, 220, 197);
 }
 .headerText2 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -46,7 +51,8 @@
 
     margin: 1em;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: rgb(179, 220, 197);
+    border-radius: 1em;
 
 }
 .button {
