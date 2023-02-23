@@ -4,32 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockPaperScissors</title>
+    <title>ROCK PAPER SCISSORS - fistful of fury</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animations.css">
     <script src="./script.js" defer></script>
-    <script src="https://kit.fontawesome.com/8c1ccae466.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 </head>
 <body>
-    
-    <div class="container">
-        <div class="header">
-            <h1 class = "headerText">Rock<span class="fa-regular fa-hand-back-fist fa-1x fa-bounce"></span> Paper<span class="fa-regular fa-hand fa-1x fa-bounce"></span> Scissors<span class="fa-regular fa-hand-scissors fa-1x fa-bounce"></span></h1>
-    
-        </div>
-        <div class="header2">
-            <h3 class="headerText2"> Let's play 5 rounds of Rock Paper Scissors!</h2>
-        </div>
-        <div class="header2">
-            <h4 class="headerText2">Click to Start!</h4>
-        </div>
-
-        <div class="buttonDiv">
-        <button class="button" id = "startButton">GO!</button>
-        </div>
+    <div id="preloaded-images">
+        <img src="./img/rsp-scissor-anim.png" width="1" height="1" alt="Image scissor" />
+        <img src="./img/rsp-rock-anim.png" width="1" height="1" alt="Image rock" />
+        <img src="./img/rsp-paper-anim.png" width="1" height="1" alt="Image paper" />
+        <img src="./img/rsp-scissor-anim-human.png" width="1" height="1" alt="Image scissor" />
+        <img src="./img/rsp-rock-anim-human.png" width="1" height="1" alt="Image rock" />
+        <img src="./img/rsp-paper-anim-human.png" width="1" height="1" alt="Image paper" />
     </div>
 
+    <div class="container">
+        <div class="section section1 blackbox">ROCK PAPER SCISSORS </div>
+        <div class="section section2 yellowbox">Fistful of Fury<br>Win 5 rounds to defeat the Machine! </div>
+        <div class="section section3 blackbox">ROUND <span class="roundText" id="currentRound">2</span></div>
+        <div class="gamecontainer section section4 yellowbox">
+            <div class="scoreandfistsContainer">
+                <div class="playerContainer">
+                    <div class="label over">
+                        <div>YOU</div>
+                        <div id="playerScore" class="redText">1</div>
+                    </div>
+                    <div id="playerContainer" class="animLabel blackbox blackborder">
+                        <div id="player" class="fistAnimationHuman"></div>
+                    </div>
+                </div>
 
 
+                <div class="CPUContainer">
+                    <div class="label over">
+                        <div>CPU</div>
+                        <div id="computerScore" class="redText">1</div>
+                    </div>
+                    <div id="CPUContainer" class="animLabel blackbox blackborder">
+                        <div id="computer" class="fistAnimation"></div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="buttonContainer">
+                <button class="rpsbutton floatingButton" id="rockButton"><img src="./img/fist.png"></button>
+                <button  class="rpsbutton floatingButton" id="paperButton"><img src="./img/paper.png"></button>
+                <button  class="rpsbutton floatingButton" id="scissorButton"><img src="./img/scissor.png"></button>
+            </div>
+
+            <div id="infobox"class="redText smallText">Click to select your weapon!</div>
+           
+   
+        </div>
+        <div class="footer">Created by Geza. 2023</div>
+    </div>
+    
 </body>
 </html>

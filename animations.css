@@ -1,0 +1,137 @@
+/* Preload images for smooth transition between animations*/
+div#preloaded-images {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px; 
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+}
+
+#computer {
+  transform: scaleX(-1);
+}
+
+
+
+
+
+.fistAnimation, .paperAnimation, .scissorAnimation, .rockAnimation, .fistAnimationHuman, .paperAnimationHuman, .scissorAnimationHuman, .rockAnimationHuman {
+
+  min-width: 20vw;
+  min-height: 20vw;
+
+
+  padding: 0px;
+  margin: 0px;
+  image-rendering: pixelated;
+}
+
+
+
+.fistAnimation {
+  background: url("./img/rsp-fist-anim.png") 0 0 no-repeat;
+  background-size: 1100%;
+  animation: spritesheetanim steps(10) 0.5s 2;
+}
+  
+.paperAnimation {
+  background: url("./img/rsp-paper-anim.png") 0 0 no-repeat;
+  background-size: 800%;
+  animation: spritesheetanim steps(7) 0.5s forwards;
+  }
+.scissorAnimation {
+  background: url("./img/rsp-scissor-anim.png") 0 0 no-repeat;
+  background-size: 800%;
+  animation: spritesheetanim steps(7) 0.5s forwards;
+}
+.rockAnimation {
+  background: url("./img/rsp-rock-anim.png") 0 0 no-repeat;
+  background-size: 800%;
+  animation: spritesheetanim steps(7) 0.5s forwards;
+}
+/* *********************************************** */
+.fistAnimationHuman {
+  background: url("./img/rsp-fist-anim-human.png") 0 0 no-repeat;
+  background-size: 1100%;
+  animation: spritesheetanim steps(10) 0.5s 2;
+}
+.paperAnimationHuman {
+  background: url("./img/rsp-paper-anim-human.png") 0 0 no-repeat;
+  background-size: 800%;
+  animation: spritesheetanim steps(7) 0.5s forwards;
+  }
+.scissorAnimationHuman {
+  background: url("./img/rsp-scissor-anim-human.png") 0 0 no-repeat;
+  background-size: 800%;
+  animation: spritesheetanim steps(7) 0.5s forwards;
+}
+.rockAnimationHuman {
+  background: url("./img/rsp-rock-anim-human.png") 0 0 no-repeat;
+  background-size: 800%;
+  animation: spritesheetanim steps(7) 0.5s forwards;
+}
+@keyframes spritesheetanim { 0% {background-position: 0%;} 100% {background-position: 100%;} }
+
+
+
+.bouncingButton {
+  animation: bouncingButton infinite ease-in 0.5s;
+}
+@keyframes bouncingButton {
+  50% {
+      margin-top: -4px;
+      /* background-color: aliceblue; */
+      box-shadow: 1px 4px 4px 1px rgba(63, 64, 69, 0.468) ;
+  }
+  100% {
+      margin-top: 4px;
+  }
+
+}
+
+.floatingButton {
+  animation: floatingButton infinite ease-in 0.5s;
+}
+@keyframes floatingButton {
+  50% {
+      transform: translate(0%,5%);
+      opacity: 0.9;
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0%,0%);
+  }
+}
+
+
+.floating {
+  animation: floating infinite ease-in 0.5s;
+}
+@keyframes floating {
+  50% {
+      transform: translate(50%,49%);
+      opacity: 0.8;
+  }
+  100% {
+      opacity: 1;
+      transform: translate(50%,51%);
+  }
+}
+
+
+
+.redborder {
+  border:solid 3px #DF1414;
+  animation: shaking 3 ease-in 0.1s;
+}
+@keyframes shaking {
+  50% {
+      transform: translate(0,2%);
+      opacity: 0.8;
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0,-2%);
+  }
+}
